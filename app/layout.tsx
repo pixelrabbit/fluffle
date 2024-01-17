@@ -22,7 +22,9 @@ export default function RootLayout({
             <h1>Warren Design System</h1>
           </div>
         </header>
-        <main className="main">{children}</main>
+        <main className="main">
+          <div className="container">{children}</div>
+        </main>
       </body>
     </html>
   )
