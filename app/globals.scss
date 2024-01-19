@@ -1,5 +1,11 @@
+@import "reset";
+@import "typography";
+
 :root {
-  --spacer-md: 32px;
+  --spacer-xs: 8px;
+  --spacer-sm: 16px;
+  --spacer-md: 24px;
+  --spacer-lg: 32px;
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -20,3 +26,4 @@ body {
   margin: 0 auto;
   max-width: 1280px;
 }
+

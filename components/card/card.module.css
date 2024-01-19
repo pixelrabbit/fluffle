@@ -1,5 +1,18 @@
 .card {
     flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--spacer-md);
     border: 1px solid lightseagreen;
-    padding: var(--spacer-md);
+    padding: var(--spacer-sm) var(--spacer-md);
+}
+.header {
+    border-bottom: 2px dashed lightseagreen;
+    padding-bottom: var(--spacer-sm);
+}
+.main {
+} 
+.buttons {
+    display: flex;
+    gap: var(--spacer-xs);
 }
