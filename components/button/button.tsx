@@ -1,9 +1,17 @@
+import "../../app/globals.scss";
+
 import Link from 'next/link';
 import styles from "./button.module.scss";
 import { clsx } from 'clsx';
 
-export default function Button() {
+export default function Button({
+    text = "",
+    type = "primary"
+}) {
     return (
-       <Link href="#" className={clsx(styles.button)}><span>link text</span></Link> 
+       <Link href="#" className={clsx(
+        styles.button,
+        styles[type]
+        )}><span>{text} here</span></Link> 
     );
 }
