@@ -4,9 +4,12 @@ import { clsx } from 'clsx';
 
 export default function Card({
     heading = "",
-    content = "",
     buttons = [],
     children
+}:{
+    heading: string,
+    buttons: any[],
+    children: React.ReactNode
 }) {
     return (
         <div className={clsx(styles.card)}>
