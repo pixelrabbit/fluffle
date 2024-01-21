@@ -8,7 +8,7 @@
 }
 .header {
     border-bottom: 2px dashed lightseagreen;
-    padding-bottom: var(--spacer-sm);
+    padding-bottom: var(--spacer-xs);
 }
 .main {
 } 
