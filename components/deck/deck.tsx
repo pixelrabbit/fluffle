@@ -1,7 +1,13 @@
 import styles from "./deck.module.css";
 import Card from "../card/card";
 
-export default function Deck() {
+export default function Deck({
+    heading,
+    content
+}:{
+    heading?: string,
+    content?: string
+}) {
     const sanity = {
         buttons: [{
             text:"Sanity",
@@ -16,8 +22,8 @@ export default function Deck() {
     return (
         <div className={styles.deck}>
             <div className={styles.header}>
-                <h2>Deck Heading</h2>
-                <p>In voluptate minim ea dolore cillum deserunt.</p>
+                <h2>{heading}</h2>
+                {content}
             </div>
             <div className={styles.main}>
                 <Card heading="NextJS"><p>Quis et amet eiusmod nostrud. Quis fugiat magna aliquip veniam duis ut quis.</p></Card>

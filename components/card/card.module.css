@@ -4,11 +4,10 @@
     flex-direction: column;
     row-gap: var(--spacer-md);
     border: 1px solid lightseagreen;
-    padding: var(--spacer-sm) var(--spacer-md);
+    padding: var(--spacer-md);
 }
 .header {
     border-bottom: 2px dashed lightseagreen;
-    padding-bottom: var(--spacer-xs);
 }
 .main {
 } 

@@ -6,9 +6,13 @@ export default function Card({
     heading = "",
     buttons = [],
     children
-}:{
+}: {
     heading?: string,
-    buttons?: any[],
+    buttons?: {
+        href: string,
+        type?: string,
+        text: string
+    }[],
     children: React.ReactNode
 }) {
     return (
@@ -19,12 +23,13 @@ export default function Card({
             <div className={clsx(styles.main)}>
                 {children}
             </div>
-            <div className={clsx(styles.buttons)}>
-                {buttons.map((button, index) => (
-                    <Button key={index} href={button.href} type={button.type}>{children}</Button>
-                ))}
-            </div>
-
+            {buttons.length > 0 &&
+                <div className={clsx(styles.buttons)}>
+                    {buttons.map((button, index) => (
+                        <Button key={index} href={button.href} type={button.type} text={button.text}></Button>
+                    ))}
+                </div>
+            }
         </div>
     );
 }

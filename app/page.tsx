@@ -4,7 +4,7 @@ import Deck from './../components/deck/deck';
 export default function Home() {
   return (
     <>
-      <Deck></Deck>
+      <Deck heading="Deck heading" content="This is the deck content"></Deck>
     </>
   )
 }

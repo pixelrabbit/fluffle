@@ -5,16 +5,16 @@ import { clsx } from 'clsx';
 export default function Button({
     type = "primary",
     href,
-    children
+    text
 }: {
     type?: string,
     href: string,
-    children: React.ReactNode
+    text: string
 }) {
     return (
         <Link href={href} className={clsx(
             styles.button,
             styles[type]
-        )}><span>{children}</span></Link>
+        )}><span>{text}</span></Link>
     );
 }
