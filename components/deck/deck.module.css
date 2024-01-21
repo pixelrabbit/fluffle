@@ -1,5 +1,15 @@
 .deck {
+    border: 2px dashed seagreen;
+    padding: var(--spacer-md);
     display: flex;
+    flex-direction: column;
+    row-gap: var(--spacer-md);
+}
+.main {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     gap: var(--spacer-md);
 }
+.header {}
+.footer {}

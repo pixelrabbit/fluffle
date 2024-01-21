@@ -19,7 +19,7 @@ export default function RootLayout({
       <body className={montserrat.className}>
         <header>
           <div className="container">
-            <h1>Warren Design System</h1>
+            <h1>Fluffle Design System</h1>
           </div>
         </header>
         <main className="main">

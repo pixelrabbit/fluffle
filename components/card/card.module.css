@@ -1,5 +1,5 @@
 .card {
-    flex: 1 1 auto;
+    flex: 1 1 320px;
     display: flex;
     flex-direction: column;
     row-gap: var(--spacer-md);
