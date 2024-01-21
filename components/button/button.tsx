@@ -7,7 +7,7 @@ export default function Button({
     href,
     text
 }: {
-    type?: string,
+    type?: "primary"|"secondary",
     href: string,
     text: string
 }) {
