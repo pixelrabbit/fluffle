@@ -5,7 +5,7 @@ import './globals.scss'
 const montserrat = Montserrat({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Warren Design System',
+  title: 'Fluffle Design System',
   description: 'Proof of concept created by Dan Govea',
 }
 
@@ -19,7 +19,7 @@ export default function RootLayout({
       <body className={montserrat.className}>
         <header>
           <div className="container">
-            <h1>Warren Design System</h1>
+            <h1>Fluffle DS</h1>
           </div>
         </header>
         <main className="main">

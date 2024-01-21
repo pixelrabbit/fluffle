@@ -1,5 +1,5 @@
 .card {
-    flex: 1 1 auto;
+    flex: 1 1 320px;
     display: flex;
     flex-direction: column;
     row-gap: var(--spacer-md);
@@ -8,7 +8,7 @@
 }
 .header {
     border-bottom: 2px dashed lightseagreen;
-    padding-bottom: var(--spacer-sm);
+    padding-bottom: var(--spacer-xs);
 }
 .main {
 } 

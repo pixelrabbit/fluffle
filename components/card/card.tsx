@@ -2,20 +2,26 @@ import Button from "./../button/button";
 import styles from "./card.module.css";
 import { clsx } from 'clsx';
 
-export default function Card() {
+export default function Card({
+    heading = "",
+    content = "",
+    buttons = [],
+    children
+}) {
     return (
         <div className={clsx(styles.card)}>
             <div className={clsx(styles.header)}>
-                <h3>This is a card.</h3>
+                <h3>{heading}</h3>
             </div>
             <div className={clsx(styles.main)}>
-                <p>Sint id enim quis aliquip tempor fugiat voluptate <a href="#">do occaecat aliquip pariatur ipsum</a>. Dolor minim id id excepteur Lorem officia id do. Quis consectetur non nisi veniam elit.</p>
+                {children}
             </div>
             <div className={clsx(styles.buttons)}>
-                <Button></Button>
-                <Button></Button>
+                {buttons.map((button, index) => (
+                    <Button key={index} href={button.href} target={button.target}>{button.text}</Button>
+                ))}
             </div>
-            
+
         </div>
     );
 }
