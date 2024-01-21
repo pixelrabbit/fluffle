@@ -7,8 +7,8 @@ export default function Card({
     buttons = [],
     children
 }:{
-    heading: string,
-    buttons: any[],
+    heading?: string,
+    buttons?: any[],
     children: React.ReactNode
 }) {
     return (
@@ -21,7 +21,7 @@ export default function Card({
             </div>
             <div className={clsx(styles.buttons)}>
                 {buttons.map((button, index) => (
-                    <Button key={index} href={button.href} target={button.target}>{button.text}</Button>
+                    <Button key={index} href={button.href} type={button.type}>{children}</Button>
                 ))}
             </div>
 
