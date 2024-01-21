@@ -3,13 +3,14 @@ import styles from "./button.module.scss";
 import { clsx } from 'clsx';
 
 export default function Button({
-    text = "",
-    type = "primary"
+    type= "primary",
+    target,
+    children
 }) {
     return (
-       <Link href="#" className={clsx(
+       <Link href="#" target={target} className={clsx(
         styles.button,
         styles[type]
-        )}><span>{text} here</span></Link> 
+        )}><span>{children}</span></Link> 
     );
 }
