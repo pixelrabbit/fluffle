@@ -1,5 +1,3 @@
-import "../../app/globals.scss";
-
 import Link from 'next/link';
 import styles from "./button.module.scss";
 import { clsx } from 'clsx';
