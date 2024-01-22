@@ -1,5 +1,5 @@
 .deck {
-    border: 2px dashed seagreen;
+    border: 2px dashed var(--color-border);
     padding: var(--spacer-md);
     display: flex;
     flex-direction: column;

@@ -3,11 +3,11 @@
     display: flex;
     flex-direction: column;
     row-gap: var(--spacer-md);
-    border: 1px solid lightseagreen;
+    border: 2px solid var(--color-border);
     padding: var(--spacer-md);
 }
 .header {
-    border-bottom: 2px dashed lightseagreen;
+    border-bottom: 2px dashed var(--color-border);
 }
 .main {
 } 

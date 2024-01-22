@@ -9,16 +9,16 @@ const meta = {
   parameters: {
     // layout: 'centered',
   },
-  // tags: ['autodocs'],
-  argTypes: {
-    // type: {
-    //   control: "select",
-    //   options: ["primary","secondary"]
-    // }
-  },
-  args: {
-    href: "#"
-  }
+  tags: ['autodocs'],
+  // argTypes: {
+  //   type: {
+  //     control: "select",
+  //     options: ["primary","secondary"]
+  //   }
+  // },
+  // args: {
+  //   href: "#"
+  // }
 } satisfies Meta<typeof Button>;
 
 export default meta;
