@@ -2,12 +2,14 @@ import Link from 'next/link';
 import styles from "./button.module.scss";
 import { clsx } from 'clsx';
 
-export default function Button({
+// https://storybook.js.org/addons/storybook-addon-react-docgen
+// must use named export fuction and default for storybook to auto-generate controls
+export function Button({
     type = "primary",
-    href,
+    href = "#",
     text
 }: {
-    type?: string,
+    type?: "primary"|"secondary",
     href: string,
     text: string
 }) {
@@ -18,3 +20,4 @@ export default function Button({
         )}><span>{text}</span></Link>
     );
 }
+export default Button;

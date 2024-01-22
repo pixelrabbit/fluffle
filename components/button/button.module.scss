@@ -1,7 +1,8 @@
 .button {
     position: relative;
-    background-color: teal;
+    background-color: var(--color-interactive);
     color: white;
+    font-weight: 600;
     padding: var(--spacer-xs) var(--spacer-sm);
     text-decoration: none;
     

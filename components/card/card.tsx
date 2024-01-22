@@ -10,7 +10,7 @@ export default function Card({
     heading?: string,
     buttons?: {
         href: string,
-        type?: string,
+        type?: "primary" | "secondary",
         text: string
     }[],
     children: React.ReactNode
