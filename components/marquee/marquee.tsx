@@ -6,19 +6,7 @@ import Image from 'next/image';
 import rabbit from '../../public/rabbit.png';
 
 export function Marquee({
-    palette = "green",
-    heading = "",
-    buttons = [],
-    children
 }: {
-    palette?: "green" | "gray"
-    heading?: string,
-    buttons?: {
-        href: string,
-        type?: "primary" | "secondary",
-        text: string
-    }[],
-    children: React.ReactNode
 }) {
     return (
         <div className={clsx(
