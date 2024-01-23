@@ -3,7 +3,7 @@ import styles from "./card.module.css";
 import { clsx } from 'clsx';
 
 export function Card({
-    palette = "scorbunny",
+    palette = "raboot",
     heading = "",
     buttons = [],
     children
