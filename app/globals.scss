@@ -1,5 +1,6 @@
 @import "reset";
 @import "typography";
+@import "palettes";
 
 :root {
   --spacer-xs: 8px;
@@ -7,6 +8,7 @@
   --spacer-md: 24px;
   --spacer-lg: 32px;
   --color-background: #104a62;
+  --color-text: #fff;
   --color-border: #83deff;
   --color-interactive: #419cbd;
   --color-accent: #ffe6a4;

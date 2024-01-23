@@ -2,11 +2,13 @@ import Button from "./../button/button";
 import styles from "./card.module.css";
 import { clsx } from 'clsx';
 
-export default function Card({
+export function Card({
+    palette = "scorbunny",
     heading = "",
     buttons = [],
     children
 }: {
+    palette: "scorbunny" | "raboot"
     heading?: string,
     buttons?: {
         href: string,
@@ -16,7 +18,10 @@ export default function Card({
     children: React.ReactNode
 }) {
     return (
-        <div className={clsx(styles.card)}>
+        <div className={clsx(
+            styles.card,
+            `palette--${palette}`
+            )}>
             <div className={clsx(styles.header)}>
                 <h3>{heading}</h3>
             </div>
@@ -33,3 +38,4 @@ export default function Card({
         </div>
     );
 }
+export default Card;

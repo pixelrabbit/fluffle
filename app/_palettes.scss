@@ -1,0 +1,14 @@
+@use "sass:map";
+
+.palette--scorbunny {
+    --color-background: #ce6d51;
+    --color-text: #fff;
+    --color-border: #784327;
+    --color-interactive: #efcf97;
+}
+.palette--raboot {
+    --color-background: #58585d;
+    --color-text: #dbdbda;
+    --color-border: #333;
+    --color-interactive: #f6d361;
+}
