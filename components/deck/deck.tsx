@@ -30,6 +30,7 @@ export default function Deck({
                 <Card heading="React"><p>Quis et amet eiusmod nostrud. Quis fugiat magna aliquip veniam duis ut quis.</p></Card>
                 <Card heading="Vercel"><p>Quis et amet eiusmod nostrud. Quis fugiat magna aliquip veniam duis ut quis.</p></Card>
                 <Card heading="Storybook"><p>Quis et amet eiusmod nostrud. Quis fugiat magna aliquip veniam duis ut quis.</p></Card>
+                <Card heading="Chromatic"><p>Quis et amet eiusmod nostrud. Quis fugiat magna aliquip veniam duis ut quis.</p></Card>
                 <Card heading="Sanity" buttons={sanity.buttons}><p>Quis et amet eiusmod nostrud. Quis fugiat magna aliquip veniam duis ut quis.</p></Card>
             </div>
             <div className={styles.footer}>
