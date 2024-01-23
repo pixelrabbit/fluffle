@@ -3,6 +3,7 @@
 @import "palettes";
 
 :root {
+  --spacer-xxs: 4px;
   --spacer-xs: 8px;
   --spacer-sm: 16px;
   --spacer-md: 24px;
@@ -18,11 +19,16 @@
 }
 
 body {
-  background-color: #ccc;
+  background-color: #f2f2f2;
+  background-image: url("/paper.png");
 }
-
+main {
+  padding: var(--spacer-lg) 0;
+}
 .container {
   margin: 0 auto;
+  padding: 0 var(--spacer-sm);
   max-width: 1280px;
+  width: 100%;
 }
 

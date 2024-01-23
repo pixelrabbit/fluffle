@@ -1,0 +1,20 @@
+.marquee {
+    height: 33.3vh;
+    background-color: #1e2623;
+    color: #fff;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    h1 {
+        text-shadow: 8px 8px 0 #000;
+    }
+}
+
+.fore {
+    position: absolute;
+    right: var(--spacer-lg);
+    bottom: calc(-1 * var(--spacer-lg));
+    height: 80%;
+    width: auto;
+}

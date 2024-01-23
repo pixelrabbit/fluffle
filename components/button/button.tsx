@@ -9,7 +9,7 @@ export function Button({
     href = "#",
     text
 }: {
-    type?: "primary"|"secondary",
+    type?: "primary" | "secondary",
     href: string,
     text: string
 }) {
@@ -17,7 +17,11 @@ export function Button({
         <Link href={href} className={clsx(
             styles.button,
             styles[type]
-        )}><span>{text}</span></Link>
+        )}>
+            <div className={styles.inner}>
+                <span>{text}</span>
+            </div>
+        </Link>
     );
 }
 export default Button;

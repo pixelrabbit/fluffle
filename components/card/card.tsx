@@ -3,12 +3,12 @@ import styles from "./card.module.css";
 import { clsx } from 'clsx';
 
 export function Card({
-    palette = "raboot",
+    palette = "green",
     heading = "",
     buttons = [],
     children
 }: {
-    palette?: "scorbunny" | "raboot"
+    palette?: "green" | "gray"
     heading?: string,
     buttons?: {
         href: string,

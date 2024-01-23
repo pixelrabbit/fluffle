@@ -1,8 +1,16 @@
-import type { Metadata } from 'next'
-import { Montserrat } from 'next/font/google'
-import './globals.scss'
+import type { Metadata } from 'next';
+import { Open_Sans, Bangers } from 'next/font/google';
+import './globals.scss';
+import { Marquee } from './../components/marquee/marquee';
 
-const montserrat = Montserrat({ subsets: ['latin'] })
+const fontBody = Open_Sans({ 
+  variable: '--font-body',
+  subsets: ['latin']
+});
+const fontHeading = Bangers({ 
+  variable: '--font-heading',
+  subsets: ['latin'], weight: "400" 
+});
 
 export const metadata: Metadata = {
   title: 'Fluffle Design System',
@@ -16,11 +24,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={montserrat.className}>
+      <body className={`${fontBody.variable} ${fontHeading.variable}`}>
         <header>
-          <div className="container">
-            <h1>Fluffle DS</h1>
-          </div>
+          <Marquee></Marquee>
         </header>
         <main className="main">
           <div className="container">{children}</div>
