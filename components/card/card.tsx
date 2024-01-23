@@ -8,7 +8,7 @@ export function Card({
     buttons = [],
     children
 }: {
-    palette: "scorbunny" | "raboot"
+    palette?: "scorbunny" | "raboot"
     heading?: string,
     buttons?: {
         href: string,
