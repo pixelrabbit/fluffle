@@ -1,14 +1,67 @@
 .marquee {
-    height: 33.3vh;
-    background-color: #1e2623;
+
+    --bg: #3c4843;
+
+    background-color: var(--bg);
     color: #fff;
     position: relative;
     display: flex;
     align-items: center;
+    padding: var(--spacer-lg) 0;
 
     h1 {
-        text-shadow: 8px 8px 0 #000;
+        position: relative;
+        text-shadow: var(--spacer-xs) var(--spacer-xs) 0 #000;
     }
+    nav {
+        position: relative;
+        display: flex;
+        gap: var(--spacer-lg);
+        a {
+            color: #fff;
+            text-decoration: none;
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            background-color: rgba(0,0,0,0.33);
+            border: 2px solid #fff;
+            padding: var(--spacer-xs) var(--spacer-sm);
+            text-shadow: var(--spacer-xxs) var(--spacer-xxs) 0 #000;
+            box-shadow: var(--spacer-xs) var(--spacer-xs) 0 #000;
+            transition: background-color 200ms ease-in-out;
+            &:hover,&:focus,&:active {
+                background-color: rgba(0,0,0,0.66);
+            }
+        }
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-image: radial-gradient(circle at center, var(--bg) 0.5rem, transparent 0),
+            radial-gradient(circle at center, var(--bg) 0.5rem, transparent 0);
+        background-size: 2rem 2rem;
+        background-position: 0 0, 1.05rem 1.05rem;
+        -webkit-mask-image: -webkit-gradient(
+            linear,
+            left 30%,
+            left bottom,
+            from(rgba(0, 0, 0, 1)),
+            to(rgba(0, 0, 0, 0))
+        );
+        mix-blend-mode: multiply;
+        opacity: 0.33;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .fore {
