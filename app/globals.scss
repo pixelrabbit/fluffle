@@ -21,6 +21,9 @@
 body {
   background-color: #f2f2f2;
   background-image: url("/paper.png");
+  * {
+    box-sizing: border-box;
+  }
 }
 main {
   padding: var(--spacer-lg) 0;
