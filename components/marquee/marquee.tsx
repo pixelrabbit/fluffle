@@ -17,8 +17,8 @@ export function Marquee({
             <div className={clsx("container",styles.container)}>
                 <h1>Fluffle <span>DS</span></h1>
                 <nav>
-                    <Link href="#">What is this?</Link>
-                    <Link href="#">Who am I?</Link>
+                    <Link href="/">What is this?</Link>
+                    <Link href="/about">Who am I?</Link>
                 </nav>
             </div>
         </div>
