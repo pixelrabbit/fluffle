@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { Open_Sans, Bangers } from 'next/font/google';
 import './globals.scss';
-import { Marquee } from './../components/marquee/marquee';
+import { Marquee } from '@/components/marquee/marquee';
 
 const fontBody = Open_Sans({ 
   variable: '--font-body',
