@@ -1,24 +1,35 @@
+'use client'
 
 import styles from "./marquee.module.scss";
 import { clsx } from 'clsx';
 import Image from 'next/image';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 import rabbit from '../../public/rabbit.png';
 
 export function Marquee({
 }: {
 }) {
+    const pathname = usePathname();
+    const links = [{
+        text: "What is this?",
+        href: "/"
+    },{
+        text: "Who am I?",
+        href: "/about"
+    }];
+
     return (
         <div className={clsx(
             styles.marquee
             )}>
-            <Image className={styles.fore} src={rabbit} alt="" />
             <div className={clsx("container",styles.container)}>
                 <h1>Fluffle <span>DS</span></h1>
                 <nav>
-                    <Link href="/">What is this?</Link>
-                    <Link href="/about">Who am I?</Link>
+                    {links.map((link, i) => (
+                        <Link key={`sitenav_${i}`} className={clsx(pathname == link.href && styles.active)} href={link.href}>{link.text}</Link>
+                    ))}
                 </nav>
             </div>
         </div>

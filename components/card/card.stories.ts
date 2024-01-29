@@ -17,6 +17,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
   args: {
+    heading: "Heading",
     children: "Lorem non duis deserunt mollit officia laboris. Et duis esse velit ut id non nisi et fugiat deserunt eu. Mollit aliqua deserunt cupidatat quis eu incididunt minim esse dolor non labore ad. Nisi id veniam sunt ut quis.",
     buttons: [{
       text: "Button",
