@@ -1,8 +1,12 @@
-// import Image from 'next/image'
+import { Metadata } from 'next';
 import Deck from '@/components/deck/deck';
+
+export const metadata: Metadata = {
+  title: 'About | Fluffle DS',
+}
 
 export default function About() {
   return (
-      <Deck heading="About the dev" content="This is the deck content"></Deck>
+      <h2>About the Developer</h2>
   )
 }

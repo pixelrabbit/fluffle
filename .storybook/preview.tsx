@@ -1,8 +1,16 @@
 import type { Preview } from "@storybook/react";
 
 import "../app/globals.scss";
-import { Montserrat } from 'next/font/google';
-const montserrat = Montserrat({ subsets: ['latin'] });
+import { Open_Sans, Bangers } from 'next/font/google';
+const fontBody = Open_Sans({ 
+  variable: '--font-body',
+  subsets: ['latin']
+});
+const fontHeading = Bangers({ 
+  variable: '--font-heading',
+  subsets: ['latin'], 
+  weight: "400" 
+});
 
 const preview: Preview = {
   parameters: {
@@ -16,9 +24,9 @@ const preview: Preview = {
   },
   decorators: [
     Story => (
-        <main className={montserrat.className}>
+        <div className={`${fontBody.variable} ${fontHeading.variable}`}>
             <Story />
-        </main>
+        </div>
     )
 ]
 };

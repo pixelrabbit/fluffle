@@ -16,9 +16,9 @@ const meta = {
   //     options: ["primary","secondary"]
   //   }
   // },
-  // args: {
-  //   href: "#"
-  // }
+  args: {
+    text: "Button text"
+  }
 } satisfies Meta<typeof Button>;
 
 export default meta;

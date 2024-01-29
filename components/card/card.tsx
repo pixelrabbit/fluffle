@@ -1,22 +1,20 @@
-import Button from "./../button/button";
+import { Button, buttonProps } from "./../button/button";
 import styles from "./card.module.css";
 import { clsx } from 'clsx';
+
+export interface cardProps {
+    palette?: "green" | "gray"
+    heading?: string,
+    buttons?: buttonProps[],
+    children: React.ReactNode
+}
 
 export function Card({
     palette = "green",
     heading = "",
     buttons = [],
     children
-}: {
-    palette?: "green" | "gray"
-    heading?: string,
-    buttons?: {
-        href: string,
-        type?: "primary" | "secondary",
-        text: string
-    }[],
-    children: React.ReactNode
-}) {
+}: cardProps) {
     return (
         <div className={clsx(
             styles.card,
