@@ -28,7 +28,7 @@ export function Marquee({
                 <h1>Fluffle <span>DS</span></h1>
                 <nav>
                     {links.map((link, i) => (
-                        <Link key={`sitenav_${i}`} className={clsx(pathname == link.href && styles.active)} href={link.href}>{link.text}</Link>
+                        <Link key={`sitenav_${i}`} className={clsx(pathname == link.href && styles.active)} href={link.href}><span>{link.text}</span></Link>
                     ))}
                 </nav>
             </div>

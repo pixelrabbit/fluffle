@@ -15,7 +15,7 @@ export default function Deck({
     return (
         <div className={styles.deck}>
             <div className={styles.header}>
-                <h2>{heading}</h2>
+                <h2>{heading}</h2> 
                 {content}
             </div>
             <div className={styles.main}>
